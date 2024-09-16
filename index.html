@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+        .auth{
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            margin-top: 50px;
+            width: 100px;
+        }
+        .mini-logo {
+            width: 30px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 450px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        input[type="password"]{
+            margin-bottom: 30px;
+        }
+        button {
+            width: 470px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .password-reset {
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+        }
+        .password-reset p{
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        .password-reset a {
+            margin-top: 500px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .password-reset a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #f3f3f3;
+            text-align: center;
+            padding: 10px;
+        }
+        .support-link {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+        .support-link:hover {
+            text-decoration: underline;
+        }
+        .copyright {
+            font-size: 12px;
+            color: #444;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="Логотип" class="logo">
+        <h2 class="auth">Авторизация</h2>
+        <form>
+            <input type="email" placeholder="Email (edu.mirea.ru или mirea.ru)">
+            <br>
+            <input type="password" placeholder="Пароль">
+            <br>
+            <button type="submit">Войти</button>
+        </form>
+        <div class="password-reset">
+            <p>Восстановление пароля:</p>
+            <a href="#">для сотрудников</a> <br>
+            <a href="#">для учащихся</a>
+        </div>
+    </div>
+
+    <footer>
+       <p class="copyright"> <img class="mini-logo" src="logo.png" alt=""> <a href="#" class="support-link">Техническая поддержка</a>  © 2024 МИРЭА - Российский технологический университет</p>
+    </footer>
+
+</body>
+</html>
